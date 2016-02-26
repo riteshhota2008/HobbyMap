@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/semantic.css">
+    <script src="js/semantic.js"></script>
+
+
+
+
+
+    <style>
+
+
+        .login-box{
+            position:relative;
+            margin: 10px auto;
+            width: 500px;
+            height: 500px;/*380px*/
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 3px;
+            -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+            -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+            box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+        }
+        .lb-header{
+            position:relative;
+            color: #00415d;
+            margin: 5px 5px 10px 5px;
+            padding-bottom:10px;
+            border-bottom: 1px solid #eee;
+            text-align:center;
+            height:28px;
+        }
+        .lb-header a{
+            margin: 0 25px;
+            padding: 0 20px;
+            text-decoration: none;
+            color: #666;
+            font-weight: bold;
+            font-size: 15px;
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            transition: all 0.1s linear;
+        }
+        .lb-header .active{
+            color: #029f5b;
+            font-size: 18px;
+        }
+        .social-login{
+            position:relative;
+            float: left;
+            width: 100%;
+            height:auto;
+            padding: 10px 0 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .social-login a{
+            position:relative;
+            float: left;
+            width:calc(40% - 8px);
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid rgba(0,0,0,0.05);
+            padding: 12px;
+            border-radius: 2px;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin: 0 3%;
+            text-align:center;
+        }
+        .social-login a i{
+            position: relative;
+            float: left;
+            width: 20px;
+            top: 2px;
+        }
+        .social-login a:first-child{
+            background-color: #DF4A32;
+        }
+        .social-login a:last-child{
+            background-color: #49639F;
+        }
+        .email-login,.email-signup{
+            position:relative;
+            float: left;
+            width: 100%;
+            height:auto;
+            margin-top: 20px;
+            text-align:center;
+        }
+        .u-form-group{
+            width:100%;
+            margin-bottom: 10px;
+        }
+        .u-form-group input[type="email"],
+        .u-form-group input[type="password"],
+
+        .u-form-group input[type="number"]{
+            width: 90%;/*calc(50% - 22px)*/
+            height:45px;
+            outline: none;
+            border: 1px solid #ddd;
+            padding: 0 10px;
+            border-radius: 2px;
+            color: #333;
+            font-size:0.8rem;
+            -webkit-transition:all 0.1s linear;
+            -moz-transition:all 0.1s linear;
+            transition:all 0.1s linear;
+        }
+        .u-form-group input[type="text"] {
+            width: 45%;/*calc(50% - 22px)*/
+            height:45px;
+            outline: none;
+            border: 1px solid #ddd;
+            padding: 0 10px;
+            border-radius: 2px;
+            color: #333;
+            font-size:0.8rem;
+            -webkit-transition:all 0.1s linear;
+            -moz-transition:all 0.1s linear;
+            transition:all 0.1s linear;
+
+        }
+        .u-form-group input:focus{
+            border-color: #358efb;
+        }
+        .u-form-group button{
+            width:50%;
+            background-color: #1CB94E;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 14px;
+            font-weight: normal;
+            padding: 14px 0;
+            border-radius: 2px;
+            text-transform: uppercase;
+        }
+        .forgot-password{
+            width:50%;
+            text-align: left;
+            text-decoration: underline;
+            color: #888;
+            font-size: 0.75rem;
+        }
+
+    </style>
+
+    <style>
+
+
+        /***********************
+        ********* Footer ******
+        ************************/
+        #footer {
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-bottom: 20px;
+            color: #aaa;
+            background: #2e2e2e;
+        }
+        #footer a {
+            color: #eee;
+        }
+        #footer a:hover {
+            color: #f39c12;
+        }
+        #footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #footer ul > li {
+            display: inline-block;
+            margin-left: 15px;
+        }
+        .follow-us {
+            margin-top: -30px;
+            text-align: right;
+            display: inline;
+        }
+        .social-icon {
+            padding-top: 6px;
+            font-size: 16px;
+            text-align: center;
+            width: 32px;
+            height: 32px;
+            border: 2px solid #999;
+            border-radius: 50%;
+            color: #999;
+            margin: 5px;
+        }
+        a.social-icon:hover, a.social-icon:active, a.social-icon:focus {
+            text-decoration: none;
+            color: #f39c12;
+            border-color: #f39c12;
+        }
+
+    </style>
+
+    <style>
+
+        @media only screen and (max-width: 768px)	{
+            .login-box  {
+                max-width: 95%;
+            }
+
+            .u-form-group input[type="email"], .u-form-group input[type="password"],  .u-form-group input[type="number"] {
+                width: 100%;
+            }
+            .u-form-group input[type="text"] {
+                width: 49.5%;
+            }
+            .ui.search.dropdown  {
+                margin-left: -24px;
+                width: 111%;
+            }
+        }
+
+    </style>
+
+
+    <title>Secondary Expandable Menu</title>
+</head>
+<body>
+<header>
+    <a id="cd-logo" href="#0"><img src="img/cd-logo.svg" alt="Homepage"></a>
+    <nav id="cd-top-nav">
+        <ul>
+            <!--<li><a href="#0">Tour</a></li>-->
+           <!-- <li><a href="#0">Login</a></li> -->
+        </ul>
+    </nav>
+    <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+</header>
+<main class="cd-main-content" style="background-color: #FAFAFA">
+
+    <!-- put your content here -->
+
+
+<br><br><br><br>
+    <div class="login-box">
+        <div class="lb-header">
+            <a href="#" class="active" id="login-box-link">Login</a>
+            <a href="#" id="signup-box-link">Sign Up</a>
+        </div>
+        <div class="social-login">
+            <a href="#" style="margin-left: 40px">
+                <i class="fa fa-google-plus fa-lg"></i>
+                Google+
+            </a>
+            <a href="#">
+                <i class="fa fa-facebook fa-lg"></i>
+                Facebook
+            </a>
+        </div>
+        <form class="email-login">
+            <div class="u-form-group">
+                <input type="email" placeholder="Email"/>
+            </div>
+            <div class="u-form-group">
+                <input type="password" placeholder="Password"/>
+            </div>
+
+            <br><br><br>
+
+            <div class="u-form-group">
+                <button>Log in</button>
+            </div>
+            <div class="u-form-group">
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+        </form>
+        <form class="email-signup">
+            <div class="u-form-group">
+                <input type="text" placeholder="First Name"/>
+                <input type="text" placeholder="Last Name"/>
+            </div>
+            <div class="u-form-group">
+                <input type="email" placeholder="Email"/>
+            </div>
+            <div class="u-form-group">
+                <input type="number" placeholder="Mobile Number"/>
+            </div>
+            <div class="u-form-group">
+                <input type="password" placeholder="Password"/>
+            </div>
+
+        <!--    <div class="u-form-group"> -->
+                <div class="ui form" style="margin-left: 24px;width: 90%">
+                    <div class="field">
+                        <select class="ui search dropdown">
+                            <option value="">Select Student or Teacher</option>
+                            <option value="Student">Student</option>
+                            <option value="Teacher">Teacher</option>
+                        </select>
+                    </div>
+                </div>
+         <!--   </div> --><br>
+
+            <div class="u-form-group">
+                <button>Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <br><br>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">Copyright &copy; 2016 HobbyMap. All Rights Reserved.</div>
+                <div class="col-sm-6">
+                 <!--   <div class="follow-us"> <a class="fa fa-facebook social-icon" href="#"></a> <a class="fa fa-twitter social-icon" href="#"></a> <a class="fa fa-linkedin social-icon" href="#"></a> <a class="fa fa-google-plus social-icon" href="#"></a> </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</main> <!-- cd-main-content -->
+
+<nav id="cd-lateral-nav">
+    <ul class="cd-navigation">
+        <li class="item-has-children">
+            <a href="#0">Services</a>
+            <ul class="sub-menu">
+                <li><a href="#0">Brand</a></li>
+                <li><a href="#0">Web Apps</a></li>
+                <li><a href="#0">Mobile Apps</a></li>
+            </ul>
+        </li> <!-- item-has-children -->
+
+        <li class="item-has-children">
+            <a href="#0">Products</a>
+            <ul class="sub-menu">
+                <li><a href="#0">Product 1</a></li>
+                <li><a href="#0">Product 2</a></li>
+                <li><a href="#0">Product 3</a></li>
+                <li><a href="#0">Product 4</a></li>
+                <li><a href="#0">Product 5</a></li>
+            </ul>
+        </li> <!-- item-has-children -->
+
+        <li class="item-has-children">
+            <a href="#0">Stockists</a>
+            <ul class="sub-menu">
+                <li><a href="#0">London</a></li>
+                <li><a href="#0">New York</a></li>
+                <li><a href="#0">Milan</a></li>
+                <li><a href="#0">Paris</a></li>
+            </ul>
+        </li> <!-- item-has-children -->
+    </ul> <!-- cd-navigation -->
+
+    <ul class="cd-navigation cd-single-item-wrapper">
+        <li><a href="#0">Tour</a></li>
+        <li><a href="#0">Login</a></li>
+        <li><a href="#0">Register</a></li>
+        <li><a href="#0">Pricing</a></li>
+        <li><a href="#0">Support</a></li>
+    </ul> <!-- cd-single-item-wrapper -->
+
+    <ul class="cd-navigation cd-single-item-wrapper">
+        <li><a class="current" href="#0">Journal</a></li>
+        <li><a href="#0">FAQ</a></li>
+        <li><a href="#0">Terms &amp; Conditions</a></li>
+        <li><a href="#0">Careers</a></li>
+        <li><a href="#0">Students</a></li>
+    </ul> <!-- cd-single-item-wrapper -->
+
+    <div class="cd-navigation socials">
+        <a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
+        <a class="cd-github cd-img-replace" href="#0">Git Hub</a>
+        <a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
+        <a class="cd-google cd-img-replace" href="#0">Google Plus</a>
+    </div> <!-- socials -->
+</nav>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+
+<script>
+    $('.email-signup').hide();
+    $('#signup-box-link').click(function () {
+        $('.email-login').fadeOut(100);
+        $('.email-signup').delay(100).fadeIn(100);
+        $('#login-box-link').removeClass('active');
+        $('#signup-box-link').addClass('active');
+    });
+    $('#login-box-link').click(function () {
+        $('.email-login').delay(100).fadeIn(100);
+        ;
+        $('.email-signup').fadeOut(100);
+        $('#login-box-link').addClass('active');
+        $('#signup-box-link').removeClass('active');
+    });
+    //# sourceURL=pen.js
+</script>
+
+<script>
+
+    $('select.dropdown')
+            .dropdown()
+    ;
+
+</script>
+
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+</body>
+</html>

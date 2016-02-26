@@ -19,6 +19,8 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 	<style>
 		a, a:visited {
 			color: #fff;
@@ -151,6 +153,194 @@
 
 	</style>
 
+	<style>
+
+		/* Services Section */
+		#services-section {
+			padding: 80px 0;
+			background-color: #FFFFFF;
+		}
+		.space {
+			margin-top: 40px;
+		}
+		#services-section i.fa {
+			font-size: 40px;
+			border: 0px solid #fff;
+			width: 100px;
+			height: 100px;
+			padding: 30px 25px;
+			background: #94c258;
+			margin-bottom: 10px;
+			border-radius: 50%;
+			transition: all 0.5s;
+			color: #fff;
+		}
+		#services-section .service:hover>i.fa {
+			background: #fff;
+			color: #88bb45;
+		}
+
+	</style>
+
+	<style>
+
+		#recent-works .col-xs-12.col-sm-4.col-md-4 {
+			padding: 15px;
+		}
+		#recent-works {
+			padding-bottom: 70px;
+		}
+		.recent-work-wrap {
+			position: relative;
+		}
+		#recent-works .readmore {
+			color: #f39c12;
+			font-weight: bold;
+			margin-left: 5px;
+			text-transform: uppercase;
+		}
+		#recent-works .readmore:hover {
+			color: #444;
+		}
+		.recent-work-wrap img {
+			width: 100%;
+		}
+		.recent-work-wrap .recent-work-inner {
+			top: 0;
+			background: transparent;
+			opacity: 1;
+			width: 100%;
+			border-radius: 0;
+			margin-bottom: 0;
+			text-align: center;
+		}
+		.recent-work-wrap .recent-work-inner h3 {
+			margin: 10px 0;
+		}
+		.recent-work-wrap .recent-work-inner h3 a {
+			font-size: 24px;
+			color: #fff;
+		}
+		.recent-work-wrap .overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			border-radius: 0;
+			background: #f39c12;
+			color: #fff;
+			vertical-align: middle;
+			-webkit-transition: opacity 500ms;
+			-moz-transition: opacity 500ms;
+			-o-transition: opacity 500ms;
+			transition: opacity 500ms;
+			padding: 30px;
+		}
+		.recent-work-wrap .overlay .preview {
+			bottom: 0;
+			display: inline-block;
+			height: 35px;
+			line-height: 35px;
+			border-radius: 0;
+			background: transparent;
+			text-align: center;
+			color: #fff;
+		}
+		.recent-work-wrap:hover .overlay {
+			opacity: 0.9;
+		}
+
+	</style>
+
+	<style>
+
+		/* About Section */
+		#about-section {
+			padding: 80px 0;
+			background-color: #fff;
+			background-size: cover;
+			background-position: top;
+			background-repeat: no-repeat;
+		}
+		#about-section i {
+			float: left;
+			display: block;
+			margin-right: 15px;
+			color: #fff;
+			text-shadow: 1px 0 #777;
+			font-size: 24px;
+		}
+		#about-section p {
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+
+	</style>
+
+	<style>
+
+	/*	@media only screen and (max-width: 768px)	{
+			.img-responsive  {
+				margin-left: -50px;
+			}
+		}
+			*/
+
+	</style>
+
+	<style>
+
+
+		/***********************
+        ********* Footer ******
+        ************************/
+		#footer {
+			padding-top: 30px;
+			padding-bottom: 10px;
+			color: #aaa;
+			background: #2e2e2e;
+		}
+		#footer a {
+			color: #eee;
+		}
+		#footer a:hover {
+			color: #f39c12;
+		}
+		#footer ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		#footer ul > li {
+			display: inline-block;
+			margin-left: 15px;
+		}
+		.follow-us {
+			margin-top: -30px;
+			text-align: right;
+			display: inline;
+		}
+		.social-icon {
+			padding-top: 6px;
+			font-size: 16px;
+			text-align: center;
+			width: 32px;
+			height: 32px;
+			border: 2px solid #999;
+			border-radius: 50%;
+			color: #999;
+			margin: 5px;
+		}
+		a.social-icon:hover, a.social-icon:active, a.social-icon:focus {
+			text-decoration: none;
+			color: #f39c12;
+			border-color: #f39c12;
+		}
+
+	</style>
+
 	<script>
 
 		var	body     = document.getElementsByTagName('body')[0],
@@ -173,8 +363,8 @@
 		<a id="cd-logo" href="#0"><img src="img/cd-logo.svg" alt="Homepage"></a>
 		<nav id="cd-top-nav">
 			<ul>
-				<li><a href="#0">Tour</a></li>
-				<li><a href="#0">Login</a></li>
+				<!--<li><a href="#0">Tour</a></li>-->
+				<li><a href="login.html">Login</a></li>
 			</ul>
 		</nav>
 		<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
@@ -190,7 +380,7 @@
 			<div class="container">
 				<div class="button-container">
 		<!--	<p><a href="#"><div class='button -border center'>Learn More</div></a></p> -->
-					<div class='button -dark center'><a href="#"> Learn More</a></div>
+					<div class='button -dark center' style="margin-left: -10px"><a href="#">Get Started</a></div>
 					</div>
 				</div>
 
@@ -198,7 +388,154 @@
 		</div>
 
 
-		</div></div>
+
+
+		<!-- Services Section -->
+		<div id="services-section" class="text-center" style="margin-top: -50px">
+			<div class="container">
+				<div class="section-title center">
+					<h2>Our <strong>Services</strong></h2>
+					<hr width="50%">
+					<div class="clearfix"></div>
+			<!--		<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus. Eleifend pellentesque natoque faucibus magna ut etiam.</p>  -->
+				</div>
+				<div class="space"></div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 service"> <i class="fa fa-desktop"></i>
+						<h4><strong>Something</strong></h4>
+						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+					</div>
+					<div class="col-md-3 col-sm-6 service"> <i class="fa fa-gears"></i>
+						<h4><strong>Something</strong></h4>
+						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
+					</div>
+					<div class="col-md-3 col-sm-6 service"> <i class="fa fa-pie-chart"></i>
+						<h4><strong>Something</strong></h4>
+						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+					</div>
+					<div class="col-md-3 col-sm-6 service"> <i class="fa fa-line-chart"></i>
+						<h4><strong>Something</strong></h4>
+						<p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<section id="recent-works">
+			<div class="container">
+				<div class="center">
+					<h2 style="text-align: center">Top Hobbies</h2>
+					<hr>
+					<p class="lead"></a></p>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="recent-work-wrap"> <img class="img-responsive" src="images/portfolio/small/item1.jpg" alt="">
+							<div class="overlay">
+								<div class="recent-work-inner">
+									<h3><a href="#">Project Title</a> </h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non odio sed eros tristique bibendum.</p>
+									<a class="preview" href="images/portfolio/full/item1.jpg" rel="prettyPhoto" title=""><i class="fa fa-search"></i> View</a> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="recent-work-wrap"> <img class="img-responsive" src="images/portfolio/small/item2.jpg" alt="">
+							<div class="overlay">
+								<div class="recent-work-inner">
+									<h3><a href="#">Project Title</a></h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non odio sed eros tristique bibendum.</p>
+									<a class="preview" href="images/portfolio/full/item2.jpg" rel="prettyPhoto"><i class="fa fa-search"></i> View</a> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="recent-work-wrap"> <img class="img-responsive" src="images/portfolio/small/item3.jpg" alt="">
+							<div class="overlay">
+								<div class="recent-work-inner">
+									<h3><a href="#">Project Title</a></h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non odio sed eros tristique bibendum.</p>
+									<a class="preview" href="images/portfolio/full/item3.jpg" rel="prettyPhoto"><i class="fa fa-search"></i> View</a> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="recent-work-wrap"> <img class="img-responsive" src="images/portfolio/small/item4.jpg" alt="">
+							<div class="overlay">
+								<div class="recent-work-inner">
+									<h3><a href="#">Project Title</a></h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non odio sed eros tristique bibendum.</p>
+									<a class="preview" href="images/portfolio/full/item4.jpg" rel="prettyPhoto"><i class="fa fa-search"></i> View</a> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="recent-work-wrap"> <img class="img-responsive" src="images/portfolio/small/item5.jpg" alt="">
+							<div class="overlay">
+								<div class="recent-work-inner">
+									<h3><a href="#">Project Title</a></h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non odio sed eros tristique bibendum.</p>
+									<a class="preview" href="images/portfolio/full/item5.jpg" rel="prettyPhoto"><i class="fa fa-search"></i> View</a> </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4">
+						<div class="recent-work-wrap"> <img class="img-responsive" src="images/portfolio/small/item6.jpg" alt="">
+							<div class="overlay">
+								<div class="recent-work-inner">
+									<h3><a href="#">Project Title</a></h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non odio sed eros tristique bibendum.</p>
+									<a class="preview" href="images/portfolio/full/item6.jpg" rel="prettyPhoto"><i class="fa fa-search"></i> View</a> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<!-- About Section -->
+		<div id="about-section">
+			<div class="container">
+				<div class="section-title text-center center">
+
+				</div>
+				<div class="row">
+					<div class="col-md-5"> <img src="images/Powerful-Features.jpg" class="img-responsive" width="300px" > </div>
+					<div class="col-md-5">
+						<div class="about-text">
+							<h3 style="text-align: center;margin-top: 50px">Features</h3>
+							<p style="font-size: 18px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh ante facilisis bibendum.</p>
+
+							<div class="container">
+								<div class="button-container">
+									<!--	<p><a href="#"><div class='button -border center'>Learn More</div></a></p> -->
+									<div class='button -dark center' style="margin-top: -50px"><a href="#">Download App</a></div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">Copyright &copy; 2016 HobbyMap. All Rights Reserved.</div>
+					<div class="col-sm-6">
+					<!--	<div class="follow-us"> <a class="fa fa-facebook social-icon" href="#"></a> <a class="fa fa-twitter social-icon" href="#"></a> <a class="fa fa-linkedin social-icon" href="#"></a> <a class="fa fa-google-plus social-icon" href="#"></a> </div> -->
+					</div>
+				</div>
+			</div>
+		</footer>
+
 
 
 	</main> <!-- cd-main-content -->
