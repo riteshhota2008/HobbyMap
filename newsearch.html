@@ -98,7 +98,7 @@
             width: auto;/*1335px*/
             position: absolute;
             left: 300px;/*340px*/
-            height: 1200px;
+            height: auto;/*1200px*/
             top: 180px;
         }
         #sidebar{
@@ -106,8 +106,9 @@
             background:#fff;
             width:20%;/*275px*/
             padding:13px 0 0 45px;
-            height:1400px;
+            height:auto;/*1400px*/
             border-right:1px solid #eee;
+            position: fixed;/**/
         }
         #sidebar h3{
             color:#262626;
@@ -1389,7 +1390,7 @@
 
     <title>Secondary Expandable Menu</title>
 </head>
-<body>
+<body style="background-color: #fff">
 <header>
     <a id="cd-logo" href="#0"><img src="img/cd-logo.svg" alt="Homepage"></a>
     <nav id="cd-top-nav">
@@ -1400,7 +1401,7 @@
     </nav>
     <a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 </header>
-<main class="cd-main-content" style="background-color: #FAFAFA">
+<main class="cd-main-content" style="background-color: #fff"><!--FAFAFA-->
 
     <!-- put your content here -->
 
@@ -1451,7 +1452,7 @@
             </div>  -->
 
             <h3>LOCALITY</h3>
-            <div class="checklist categories">
+            <div class="checklist categories" style="overflow-y:scroll; overflow-x:hidden; height:500px;">
                 <ul>
                     <li><a href=""><span></span>Vadapalani</a></li>
                     <li><a href=""><span></span>Adambakkam</a></li>
@@ -1492,7 +1493,7 @@
                 </ul>
             </div> -->
 
-            <h3>SIZES</h3>
+      <!--      <h3>SIZES</h3>
             <div class="checklist sizes">
                 <ul>
                     <li><a href=""><span></span>XS</a></li>
@@ -1505,10 +1506,10 @@
                     <li><a href=""><span></span>XL</a></li>
                     <li><a href=""><span></span>XXL</a></li>
                 </ul>
-            </div>
+            </div>  -->
 
-            <h3>PRICE RANGE</h3>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/price-range.png" alt="" />
+          <!--  <h3>PRICE RANGE</h3>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/price-range.png" alt="" />  -->
         </div>
 
    <!--     <div id="grid-selector">
@@ -1546,18 +1547,20 @@
     </span>
 
     <span class="survey-name">
-      Web Development
+      Web Development<i class="fa fa-heart-o" style="margin-left: 28px"></i>
     </span><br>
 
     <span class="survey-country grid-only">
       Name - Ritesh Hota<br>
       Mobile No. - 9551631252<br>
       Email - riteshhota.2008@gmail.com<br>
-      Address - Vadapalani, Chennai
+      Address - Vadapalani, Chennai<br>
+      Fees - Rs 1000/month<br>
+      Description - Something......
     </span>
 
                    <div class="pull-right">
-
+<!--
       <span class="survey-progress">
         <span class="survey-progress-bg">
           <span class="survey-progress-fg" style="width: 88%;"></span>
@@ -1576,13 +1579,13 @@
 
       <span class="survey-end-date ended">
        <!-- 2014 - May 10 -->
-      </span>
+<!--      </span>
       <span class="survey-stage">
         <span class="stage draft">Draft</span>
       <span class="stage awarded">Awarded</span>
       <span class="stage live">Live</span>
       <span class="stage ended active">Ended</span>
-      </span>
+      </span> -->
                    </div>
                </li>
                <li class="survey-item">
@@ -1591,18 +1594,20 @@
     </span>
 
     <span class="survey-name">
-      Android Development
+      Android Development<i class="fa fa-heart-o" style="margin-left: 28px"></i>
     </span><br>
 
     <span class="survey-country grid-only">
       Name - Abhishek Dabholkar<br>
       Mobile No. - 9551631252<br>
       Email - riteshhota.2008@gmail.com<br>
-      Address - Vadapalani, Chennai
+      Address - Vadapalani, Chennai<br>
+      Fees - Rs 1000/month<br>
+      Description - Something......
     </span>
 
                    <div class="pull-right">
-
+<!--
       <span class="survey-progress">
         <span class="survey-progress-bg">
           <span class="survey-progress-fg" style="width: 25%;"></span>
@@ -1621,13 +1626,13 @@
 
       <span class="survey-end-date">
         <!--2014 - July 12-->
-      </span>
+<!--      </span>
       <span class="survey-stage">
         <span class="stage draft">Draft</span>
       <span class="stage awarded">Awarded</span>
       <span class="stage live active">Live</span>
       <span class="stage ended">Ended</span>
-      </span>
+      </span>  -->
                    </div>
                </li>
                <li class="survey-item">
@@ -1636,28 +1641,135 @@
     </span>
 
     <span class="survey-name">
-      Database Management
+      Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
     </span><br>
 
     <span class="survey-country grid-only">
       Name - Sruthik P<br>
       Mobile No. - 9551631252<br>
       Email - riteshhota.2008@gmail.com<br>
-      Address - Vadapalani, Chennai
+      Address - Vadapalani, Chennai<br>
+      Fees - Rs 1000/month<br>
+      Description - Something......
     </span>
 
                    <div class="pull-right">
-      <span class="survey-end-date">
+ <!--     <span class="survey-end-date">
         <!--2014 - Oct 1-->
-      </span>
+ <!--     </span>
       <span class="survey-stage">
         <span class="stage draft">Draft</span>
       <span class="stage awarded active">Awarded</span>
       <span class="stage live">Live</span>
       <span class="stage ended">Ended</span>
-      </span>
+      </span>  -->
                    </div>
                </li>
+
+               <li class="survey-item">
+    <span class="survey-country list-only">
+      US
+    </span>
+
+    <span class="survey-name">
+      Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
+    </span><br>
+
+    <span class="survey-country grid-only">
+      Name - Sruthik P<br>
+      Mobile No. - 9551631252<br>
+      Email - riteshhota.2008@gmail.com<br>
+      Address - Vadapalani, Chennai<br>
+      Fees - Rs 1000/month<br>
+      Description - Something......
+    </span>
+
+                   <div class="pull-right">
+                       <!--     <span class="survey-end-date">
+                              <!--2014 - Oct 1-->
+                       <!--     </span>
+                            <span class="survey-stage">
+                              <span class="stage draft">Draft</span>
+                            <span class="stage awarded active">Awarded</span>
+                            <span class="stage live">Live</span>
+                            <span class="stage ended">Ended</span>
+                            </span>  -->
+                   </div>
+               </li>
+
+
+               <li class="survey-item">
+    <span class="survey-country list-only">
+      US
+    </span>
+
+    <span class="survey-name">
+      Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
+    </span><br>
+
+    <span class="survey-country grid-only">
+      Name - Sruthik P<br>
+      Mobile No. - 9551631252<br>
+      Email - riteshhota.2008@gmail.com<br>
+      Address - Vadapalani, Chennai<br>
+      Fees - Rs 1000/month<br>
+      Description - Something......
+    </span>
+
+                   <div class="pull-right">
+
+                   </div>
+               </li>
+
+
+               <li class="survey-item">
+    <span class="survey-country list-only">
+      US
+    </span>
+
+    <span class="survey-name">
+      Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
+    </span><br>
+
+    <span class="survey-country grid-only">
+      Name - Sruthik P<br>
+      Mobile No. - 9551631252<br>
+      Email - riteshhota.2008@gmail.com<br>
+      Address - Vadapalani, Chennai<br>
+      Fees - Rs 1000/month<br>
+      Description - Something......
+    </span>
+
+                   <div class="pull-right">
+
+                   </div>
+               </li>
+
+
+               <li class="survey-item">
+    <span class="survey-country list-only">
+      US
+    </span>
+
+    <span class="survey-name">
+      Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
+    </span><br>
+
+    <span class="survey-country grid-only">
+      Name - Sruthik P<br>
+      Mobile No. - 9551631252<br>
+      Email - riteshhota.2008@gmail.com<br>
+      Address - Vadapalani, Chennai<br>
+      Fees - Rs 1000/month<br>
+      Description - Something......
+    </span>
+
+                   <div class="pull-right">
+
+                   </div>
+               </li>
+
+
            </ul>
 
 
@@ -2384,17 +2496,17 @@
         </div> -->
     </div> </div>
 
-
+<!--
     <footer id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">Copyright &copy; 2016 HobbyMap. All Rights Reserved.</div>
+                <div class="col-sm-6" style="margin-left: -50px">Copyright &copy; 2016 HobbyMap. All Rights Reserved.</div>
                 <div class="col-sm-6">
                     <!--   <div class="follow-us"> <a class="fa fa-facebook social-icon" href="#"></a> <a class="fa fa-twitter social-icon" href="#"></a> <a class="fa fa-linkedin social-icon" href="#"></a> <a class="fa fa-google-plus social-icon" href="#"></a> </div> -->
-                </div>
+   <!--             </div>
             </div>
         </div>
-    </footer>
+    </footer>  -->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -2403,61 +2515,60 @@
 
 
 </main> <!-- cd-main-content -->
-
 <nav id="cd-lateral-nav">
-    <ul class="cd-navigation">
-        <li class="item-has-children">
-            <a href="#0">Services</a>
-            <ul class="sub-menu">
-                <li><a href="#0">Brand</a></li>
-                <li><a href="#0">Web Apps</a></li>
-                <li><a href="#0">Mobile Apps</a></li>
-            </ul>
-        </li> <!-- item-has-children -->
+    <!--	<ul class="cd-navigation">
+            <li class="item-has-children">
+                <a href="#0">Services</a>
+                <ul class="sub-menu">
+                    <li><a href="#0">Brand</a></li>
+                    <li><a href="#0">Web Apps</a></li>
+                    <li><a href="#0">Mobile Apps</a></li>
+                </ul>
+            </li> <!-- item-has-children -->
 
-        <li class="item-has-children">
-            <a href="#0">Products</a>
-            <ul class="sub-menu">
-                <li><a href="#0">Product 1</a></li>
-                <li><a href="#0">Product 2</a></li>
-                <li><a href="#0">Product 3</a></li>
-                <li><a href="#0">Product 4</a></li>
-                <li><a href="#0">Product 5</a></li>
-            </ul>
-        </li> <!-- item-has-children -->
+    <!--		<li class="item-has-children">
+                <a href="#0">Products</a>
+                <ul class="sub-menu">
+                    <li><a href="#0">Product 1</a></li>
+                    <li><a href="#0">Product 2</a></li>
+                    <li><a href="#0">Product 3</a></li>
+                    <li><a href="#0">Product 4</a></li>
+                    <li><a href="#0">Product 5</a></li>
+                </ul>
+            </li> <!-- item-has-children -->
 
-        <li class="item-has-children">
-            <a href="#0">Stockists</a>
-            <ul class="sub-menu">
-                <li><a href="#0">London</a></li>
-                <li><a href="#0">New York</a></li>
-                <li><a href="#0">Milan</a></li>
-                <li><a href="#0">Paris</a></li>
-            </ul>
-        </li> <!-- item-has-children -->
-    </ul> <!-- cd-navigation -->
+    <!--		<li class="item-has-children">
+                <a href="#0">Stockists</a>
+                <ul class="sub-menu">
+                    <li><a href="#0">London</a></li>
+                    <li><a href="#0">New York</a></li>
+                    <li><a href="#0">Milan</a></li>
+                    <li><a href="#0">Paris</a></li>
+                </ul>
+            </li> <!-- item-has-children -->
+    <!--	</ul> <!-- cd-navigation -->
 
     <ul class="cd-navigation cd-single-item-wrapper">
-        <li><a href="#0">Tour</a></li>
-        <li><a href="#0">Login</a></li>
-        <li><a href="#0">Register</a></li>
+        <!--		<li><a href="#0">Tour</a></li>  -->
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="index.html">Logout</a></li>
         <li><a href="#0">Pricing</a></li>
         <li><a href="#0">Support</a></li>
     </ul> <!-- cd-single-item-wrapper -->
 
     <ul class="cd-navigation cd-single-item-wrapper">
-        <li><a class="current" href="#0">Journal</a></li>
+        <li><a class="current" href="#0">About Us</a></li>
         <li><a href="#0">FAQ</a></li>
         <li><a href="#0">Terms &amp; Conditions</a></li>
-        <li><a href="#0">Careers</a></li>
-        <li><a href="#0">Students</a></li>
+        <li><a href="#0">Contact Us</a></li>
+        <!--	<li><a href="#0">Students</a></li> -->
     </ul> <!-- cd-single-item-wrapper -->
 
     <div class="cd-navigation socials">
         <a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
-        <a class="cd-github cd-img-replace" href="#0">Git Hub</a>
-        <a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
-        <a class="cd-google cd-img-replace" href="#0">Google Plus</a>
+        <!--	<a class="cd-github cd-img-replace" href="#0">Git Hub</a> -->
+        <a class="cd-facebook cd-img-replace" href="#0">Facebook</a> -->
+        <!--	<a class="cd-google cd-img-replace" href="#0">Google Plus</a>  -->
     </div> <!-- socials -->
 </nav>
 
