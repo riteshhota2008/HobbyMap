@@ -2,6 +2,8 @@
 
 ## Changelog
 
+  1.0.6 - Created teacher more info page.
+  
   1.0.5 - Created Student profile page.
   
   1.0.4 - Created Student favourites hobbies classes.
