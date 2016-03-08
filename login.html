@@ -15,10 +15,6 @@
     <link rel="stylesheet" type="text/css" href="css/semantic.css">
     <script src="js/semantic.js"></script>
 
-
-
-
-
     <style>
 
 
@@ -161,7 +157,6 @@
 
     <style>
 
-
         /***********************
         ********* Footer ******
         ************************/
@@ -267,43 +262,50 @@
                 Facebook
             </a>
         </div>
-        <form class="email-login">
+        <form class="email-login" action="login.php" method="post">
             <div class="u-form-group">
-                <input type="email" placeholder="Email"/>
+                <input type="email" name="email" placeholder="Email"/>
             </div>
             <div class="u-form-group">
-                <input type="password" placeholder="Password"/>
+                <input type="password" name="password" placeholder="Password"/>
             </div>
 
             <br><br><br>
 
             <div class="u-form-group">
-                <button><a href="newsearch.html" style="color: #fff">Log in</a></button>
+                <button type="submit">Log in</button>
             </div>
             <div class="u-form-group">
                 <a href="#" class="forgot-password">Forgot password?</a>
             </div>
         </form>
-        <form class="email-signup">
+        <form class="email-signup" action="php/register.php" method="post">
             <div class="u-form-group">
-                <input type="text" placeholder="First Name"/>
-                <input type="text" placeholder="Last Name"/>
+                <input type="text" name="firstname" placeholder="First Name"/>
+                <input type="text" name="lastname" placeholder="Last Name"/>
             </div>
             <div class="u-form-group">
-                <input type="email" placeholder="Email"/>
+                <input type="email" name="email" placeholder="Email"/>
             </div>
             <div class="u-form-group">
-                <input type="number" placeholder="Mobile Number"/>
+                <input type="number" name="mobile" placeholder="Mobile Number"/>
             </div>
             <div class="u-form-group">
-                <input type="password" placeholder="Password"/>
+                <input type="password" name="password" placeholder="Password"/>
             </div>
+
+
+
+
+
+
+
 
         <!--    <div class="u-form-group"> -->
                 <div class="ui form" style="margin-left: 24px;width: 90%">
                     <div class="field">
-                        <select class="ui search dropdown">
-                            <option value="">Select Student or Teacher</option>
+                        <select class="ui search dropdown" name="profession">
+                            <option value="profession">Select Student or Teacher</option>
                             <option value="Student">Student</option>
                             <option value="Teacher">Teacher</option>
                         </select>
@@ -312,7 +314,7 @@
          <!--   </div> --><br>
 
             <div class="u-form-group">
-                <button><a href="newsearch.html" style="color: #fff">Sign Up</a></button>
+                <button type="submit"><!--<a href="newsearch.html" style="color: #fff">-->Sign Up<!--</a>--></button>
             </div>
         </form>
     </div>
