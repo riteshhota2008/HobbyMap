@@ -2,7 +2,7 @@
 
 ## Changelog
 
-  1.0.8 - Created Teacher more info page.
+  1.0.8 - Created Get location and subject selection page.
   
   1.0.7 - Created Database, Backend of login, signup and fetch hobbies page.
   
