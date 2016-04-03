@@ -147,7 +147,7 @@ if(!empty($_POST))
         $result = $stmt->execute($query_params);
     }
     catch(PDOException $ex){ die("Failed to run query: " . $ex->getMessage()); }
-    header("Location: http://rh.16mb.com/search.php");
-    die("Redirecting to http://rh.16mb.com/search.php");
+    header("Location: http://rh.16mb.com/newsearch.php");
+    die("Redirecting to http://rh.16mb.com/newsearch.php");
 }
 ?>

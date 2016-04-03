@@ -1217,7 +1217,7 @@ for($i=0; $row = $result->fetch(); $i++){
             .grid .survey-item {
                 display: block;
                 width: auto;
-                height: 200px;/*250*/
+                height: 200px;/*250*mobile*/
                 margin: 10px auto;
             }
         }
@@ -1604,112 +1604,110 @@ for($i=0; $row = $result->fetch(); $i++){
 
 
 
-    <!-- fetch start from here -->
+                <!-- fetch start from here -->
 
- <!--
-
-
-
-                <li class="survey-item">
-
-    <span class="survey-country list-only">
-      Ritesh Hota
-    </span>
-
-    <span class="survey-name">
-      Web Development<i class="fa fa-heart-o" style="margin-left: 28px"></i>
-    </span><br>
-
-    <span class="survey-country grid-only">
-      Name - Ritesh Hota<br>
-      Mobile No. - 9551631252<br>
-      Email - <br>
-      Address - Vadapalani, Chennai<br>
-      Fees - Rs 1000/month<br>
-      Description - Something......
-    </span>
-
-                    <div class="pull-right">
-                        <!--
-                              <span class="survey-progress">
-                                <span class="survey-progress-bg">
-                                  <span class="survey-progress-fg" style="width: 88%;"></span>
-                              </span>
-
-                              <span class="survey-progress-labels">
-                                  <span class="survey-progress-label">
-                                    88%
-                                  </span>
-
-                              <span class="survey-completes">
-                                    490 / 500
-                                  </span>
-                              </span>
-                              </span>
-
-                              <span class="survey-end-date ended">
-                               <!-- 2014 - May 10 -->
-                        <!--      </span>
-                              <span class="survey-stage">
-                                <span class="stage draft">Draft</span>
-                              <span class="stage awarded">Awarded</span>
-                              <span class="stage live">Live</span>
-                              <span class="stage ended active">Ended</span>
-                              </span> -->
- <!--                   </div>
-                </li>
-                <li class="survey-item">
-    <span class="survey-country list-only">
-      US
-    </span>
-
-    <span class="survey-name">
-      Android Development<i class="fa fa-heart-o" style="margin-left: 28px"></i>
-    </span><br>
-
-    <span class="survey-country grid-only">
+                <!--
 
 
 
-      Name - Abhishek Dabholkar<br>
-      Mobile No. - 9551631252<br>
-      Email - riteshhota.2008@gmail.com<br>
-      Address - Vadapalani, Chennai<br>
-      Fees - Rs 1000/month<br>
-      Description - Something......
-    </span>
+                               <li class="survey-item">
 
-                    <div class="pull-right">
-                        <!--
-                              <span class="survey-progress">
-                                <span class="survey-progress-bg">
-                                  <span class="survey-progress-fg" style="width: 25%;"></span>
-                              </span>
+                   <span class="survey-country list-only">
+                     Ritesh Hota
+                   </span>
 
-                              <span class="survey-progress-labels">
-                                  <span class="survey-progress-label">
-                                    25%
-                                  </span>
+                   <span class="survey-name">
+                     Web Development<i class="fa fa-heart-o" style="margin-left: 28px"></i>
+                   </span><br>
 
-                              <span class="survey-completes">
-                                    150 / 500
-                                  </span>
-                              </span>
-                              </span>
+                   <span class="survey-country grid-only">
+                     Name - Ritesh Hota<br>
+                     Mobile No. - 9551631252<br>
+                     Email - <br>
+                     Address - Vadapalani, Chennai<br>
+                     Fees - Rs 1000/month<br>
+                     Description - Something......
+                   </span>
 
-                              <span class="survey-end-date">
-                                <!--2014 - July 12-->
-                        <!--      </span>
-                              <span class="survey-stage">
-                                <span class="stage draft">Draft</span>
-                              <span class="stage awarded">Awarded</span>
-                              <span class="stage live active">Live</span>
-                              <span class="stage ended">Ended</span>
-                              </span>  -->
- <!--                   </div>
-                </li>
+                                   <div class="pull-right">
+                                       <!--
+                                             <span class="survey-progress">
+                                               <span class="survey-progress-bg">
+                                                 <span class="survey-progress-fg" style="width: 88%;"></span>
+                                             </span>
+
+                                             <span class="survey-progress-labels">
+                                                 <span class="survey-progress-label">
+                                                   88%
+                                                 </span>
+
+                                             <span class="survey-completes">
+                                                   490 / 500
+                                                 </span>
+                                             </span>
+                                             </span>
+
+                                             <span class="survey-end-date ended">
+                                              <!-- 2014 - May 10 -->
+                <!--      </span>
+                      <span class="survey-stage">
+                        <span class="stage draft">Draft</span>
+                      <span class="stage awarded">Awarded</span>
+                      <span class="stage live">Live</span>
+                      <span class="stage ended active">Ended</span>
+                      </span> -->
+                <!--                   </div>
+                               </li>
+                               <li class="survey-item">
+                   <span class="survey-country list-only">
+                     US
+                   </span>
+
+                   <span class="survey-name">
+                     Android Development<i class="fa fa-heart-o" style="margin-left: 28px"></i>
+                   </span><br>
+
+                   <span class="survey-country grid-only">
 
 
+
+                     Name - Abhishek Dabholkar<br>
+                     Mobile No. - 9551631252<br>
+                     Email - riteshhota.2008@gmail.com<br>
+                     Address - Vadapalani, Chennai<br>
+                     Fees - Rs 1000/month<br>
+                     Description - Something......
+                   </span>
+
+                                   <div class="pull-right">
+                                       <!--
+                                             <span class="survey-progress">
+                                               <span class="survey-progress-bg">
+                                                 <span class="survey-progress-fg" style="width: 25%;"></span>
+                                             </span>
+
+                                             <span class="survey-progress-labels">
+                                                 <span class="survey-progress-label">
+                                                   25%
+                                                 </span>
+
+                                             <span class="survey-completes">
+                                                   150 / 500
+                                                 </span>
+                                             </span>
+                                             </span>
+
+                                             <span class="survey-end-date">
+                                               <!--2014 - July 12-->
+                <!--      </span>
+                      <span class="survey-stage">
+                        <span class="stage draft">Draft</span>
+                      <span class="stage awarded">Awarded</span>
+                      <span class="stage live active">Live</span>
+                      <span class="stage ended">Ended</span>
+                      </span>  -->
+                <!--                   </div>
+                               </li>
 
 
 
@@ -1720,141 +1718,143 @@ for($i=0; $row = $result->fetch(); $i++){
 
 
 
-                <li class="survey-item">
-    <span class="survey-country list-only">
-      US
-    </span>
-
-    <span class="survey-name">
-      Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
-    </span><br>
-
-    <span class="survey-country grid-only">
-      Name - Sruthik P<br>
-      Mobile No. - 9551631252<br>
-      Email - riteshhota.2008@gmail.com<br>
-      Address - Vadapalani, Chennai<br>
-      Fees - Rs 1000/month<br>
-      Description - Something......
-    </span>
-
-                    <div class="pull-right">
-                        <!--     <span class="survey-end-date">
-                               <!--2014 - Oct 1-->
-                        <!--     </span>
-                             <span class="survey-stage">
-                               <span class="stage draft">Draft</span>
-                             <span class="stage awarded active">Awarded</span>
-                             <span class="stage live">Live</span>
-                             <span class="stage ended">Ended</span>
-                             </span>  -->
- <!--                   </div>
-                </li>
-
-                <li class="survey-item">
-    <span class="survey-country list-only">
-      US
-    </span>
-
-    <span class="survey-name">
-      Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
-    </span><br>
-
-    <span class="survey-country grid-only">
-      Name - Sruthik P<br>
-      Mobile No. - 9551631252<br>
-      Email - riteshhota.2008@gmail.com<br>
-      Address - Vadapalani, Chennai<br>
-      Fees - Rs 1000/month<br>
-      Description - Something......
-    </span>
-
-                    <div class="pull-right">
-                        <!--     <span class="survey-end-date">
-                               <!--2014 - Oct 1-->
-                        <!--     </span>
-                             <span class="survey-stage">
-                               <span class="stage draft">Draft</span>
-                             <span class="stage awarded active">Awarded</span>
-                             <span class="stage live">Live</span>
-                             <span class="stage ended">Ended</span>
-                             </span>  -->
-<!--                    </div>
-                </li>
 
 
-                <li class="survey-item">
-    <span class="survey-country list-only">
-      US
-    </span>
+                               <li class="survey-item">
+                   <span class="survey-country list-only">
+                     US
+                   </span>
 
-    <span class="survey-name">
-      Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
-    </span><br>
+                   <span class="survey-name">
+                     Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
+                   </span><br>
 
-    <span class="survey-country grid-only">
-      Name - Sruthik P<br>
-      Mobile No. - 9551631252<br>
-      Email - riteshhota.2008@gmail.com<br>
-      Address - Vadapalani, Chennai<br>
-      Fees - Rs 1000/month<br>
-      Description - Something......
-    </span>
+                   <span class="survey-country grid-only">
+                     Name - Sruthik P<br>
+                     Mobile No. - 9551631252<br>
+                     Email - riteshhota.2008@gmail.com<br>
+                     Address - Vadapalani, Chennai<br>
+                     Fees - Rs 1000/month<br>
+                     Description - Something......
+                   </span>
 
-                    <div class="pull-right">
+                                   <div class="pull-right">
+                                       <!--     <span class="survey-end-date">
+                                              <!--2014 - Oct 1-->
+                <!--     </span>
+                     <span class="survey-stage">
+                       <span class="stage draft">Draft</span>
+                     <span class="stage awarded active">Awarded</span>
+                     <span class="stage live">Live</span>
+                     <span class="stage ended">Ended</span>
+                     </span>  -->
+                <!--                   </div>
+                               </li>
 
-                    </div>
-                </li>
+                               <li class="survey-item">
+                   <span class="survey-country list-only">
+                     US
+                   </span>
+
+                   <span class="survey-name">
+                     Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
+                   </span><br>
+
+                   <span class="survey-country grid-only">
+                     Name - Sruthik P<br>
+                     Mobile No. - 9551631252<br>
+                     Email - riteshhota.2008@gmail.com<br>
+                     Address - Vadapalani, Chennai<br>
+                     Fees - Rs 1000/month<br>
+                     Description - Something......
+                   </span>
+
+                                   <div class="pull-right">
+                                       <!--     <span class="survey-end-date">
+                                              <!--2014 - Oct 1-->
+                <!--     </span>
+                     <span class="survey-stage">
+                       <span class="stage draft">Draft</span>
+                     <span class="stage awarded active">Awarded</span>
+                     <span class="stage live">Live</span>
+                     <span class="stage ended">Ended</span>
+                     </span>  -->
+                <!--                    </div>
+                                </li>
 
 
-                <li class="survey-item">
-    <span class="survey-country list-only">
-      US
-    </span>
+                                <li class="survey-item">
+                    <span class="survey-country list-only">
+                      US
+                    </span>
 
-    <span class="survey-name">
-      Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
-    </span><br>
+                    <span class="survey-name">
+                      Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
+                    </span><br>
 
-    <span class="survey-country grid-only">
-      Name - Sruthik P<br>
-      Mobile No. - 9551631252<br>
-      Email - riteshhota.2008@gmail.com<br>
-      Address - Vadapalani, Chennai<br>
-      Fees - Rs 1000/month<br>
-      Description - Something......
-    </span>
+                    <span class="survey-country grid-only">
+                      Name - Sruthik P<br>
+                      Mobile No. - 9551631252<br>
+                      Email - riteshhota.2008@gmail.com<br>
+                      Address - Vadapalani, Chennai<br>
+                      Fees - Rs 1000/month<br>
+                      Description - Something......
+                    </span>
 
-                    <div class="pull-right">
+                                    <div class="pull-right">
 
-                    </div>
-                </li>
+                                    </div>
+                                </li>
 
 
-                <li class="survey-item">
-    <span class="survey-country list-only">
-      US
-    </span>
+                                <li class="survey-item">
+                    <span class="survey-country list-only">
+                      US
+                    </span>
 
-    <span class="survey-name">
-      Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
-    </span><br>
+                    <span class="survey-name">
+                      Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
+                    </span><br>
 
-    <span class="survey-country grid-only">
-      Name - Sruthik P<br>
-      Mobile No. - 9551631252<br>
-      Email - riteshhota.2008@gmail.com<br>
-      Address - Vadapalani, Chennai<br>
-      Fees - Rs 1000/month<br>
-      Description - Something......
-    </span>
+                    <span class="survey-country grid-only">
+                      Name - Sruthik P<br>
+                      Mobile No. - 9551631252<br>
+                      Email - riteshhota.2008@gmail.com<br>
+                      Address - Vadapalani, Chennai<br>
+                      Fees - Rs 1000/month<br>
+                      Description - Something......
+                    </span>
 
-                    <div class="pull-right">
+                                    <div class="pull-right">
 
-                    </div>
-                </li>
+                                    </div>
+                                </li>
 
--->
+
+                                <li class="survey-item">
+                    <span class="survey-country list-only">
+                      US
+                    </span>
+
+                    <span class="survey-name">
+                      Database Management<i class="fa fa-heart-o" style="margin-left: 17px"></i>
+                    </span><br>
+
+                    <span class="survey-country grid-only">
+                      Name - Sruthik P<br>
+                      Mobile No. - 9551631252<br>
+                      Email - riteshhota.2008@gmail.com<br>
+                      Address - Vadapalani, Chennai<br>
+                      Fees - Rs 1000/month<br>
+                      Description - Something......
+                    </span>
+
+                                    <div class="pull-right">
+
+                                    </div>
+                                </li>
+
+                -->
 
                 <?php
                 include('php/config.php');
@@ -1864,9 +1864,9 @@ for($i=0; $row = $result->fetch(); $i++){
                     echo '<li class="survey-item">
     <span class="survey-country list-only">'.$row['email'] . '</span><span class="survey-name">
       '.$row['subjects'].'<!--<i class="fa fa-heart-o" style="margin-left: 17px"></i>-->
-    </span><br><span class="survey-country grid-only">Name - '.$row['firstname'].'&nbsp;'.$row['lastname'].'<br>Address - '.$row['locality'].'<br>Fees - '.$row['fees'].'
+    </span><br><span class="survey-country grid-only">Name - '.$row['firstname'].'&nbsp;'.$row['lastname'].'<br>Email - '.$row['email'].'<br>Contact No - '.$row['mobile'].'<br>Address - '.$row['locality'].'<br>Fees - '.$row['fees'].'/month
 
-     /month<br><br><button class="btn btn-primary" type="button"><a href="http://rh.16mb.com/login.html"><span style="color:#fff">Get Contact Details!</span></a></button>
+   <!--  <br><br><button class="btn btn-primary" type="button"><a href="http://rh.16mb.com/newsearch.php"><span style="color:#fff">Get Contact Details!</span></a></button> -->
 
     </span><div class="pull-right">
 
